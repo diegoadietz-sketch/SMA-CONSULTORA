@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Consultora - Seguridad e Higiene</title>
+    <style>
+        /* 1. Configuración del Fondo y Cuerpo */
+        body {
+            /* Capa oscura sobre la imagen para que el texto resalte */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* 2. Títulos Principales */
+        h1 {
+            color: #f39c12; /* Naranja de seguridad */
+            font-size: 55px;
+            margin: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 300;
+            color: #bdc3c7;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* 3. Lista "Sábana" (Acordeón) */
+        details {
+            width: 100%;
+            max-width: 700px;
+            background-color: rgba(0, 0, 0, 0.75); /* Negro traslúcido */
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(243, 156, 18, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(4px); /* Efecto esmerilado */
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            font-size: 35px;
+            color: #f39c12;
+            cursor: pointer;
+            font-weight: bold;
+            list-style: none;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto de Salto al pasar el mouse */
+        summary:hover {
+            transform: translateX(15px);
+            color: #ffffff;
+        }
+
+        summary::-webkit-details-marker {
+            display: none; /* Quita la flechita por defecto */
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        li {
+            font-size: 25px;
+            margin: 12px 0;
+            color: #ecf0f1;
+            border-left: 3px solid #f39c12;
+            padding-left: 15px;
+        }
+
+        /* 4. Botón de WhatsApp con Pulso */
+        @keyframes pulso {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        .boton-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 26px;
+            margin-top: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            animation: pulso 2s infinite ease-in-out;
+        }
+
+        .boton-whatsapp:hover {
+            background-color: #128c7e;
+            animation: none; /* Se detiene el pulso al tocarlo */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SMA CONSULTORA</h1>
+    <h2>Servicio de asesoría en seguridad, higiene y medio ambiente</h2>
+
+    <details>
+        <summary>Seguridad Industrial 🛡️</summary>
+        <ul>
+            <li>Plan de capacitación</li>
+            <li>Análisis de puesto de trabajo</li>
+            <li>Elaboración de matriz de riesgo</li>
+            <li>Estudios de ergonomía por puesto</li>
+            <li>Mediciones de ruido, iluminación y vibraciones</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Higiene Laboral ⚠️</summary>
+        <ul>
+            <li>Plan de capacitación</li>
+            <li>Análisis de puesto de trabajo (APT)</li>
+            <li>Elaboración de matriz de riesgo</li>
+            <li>Estudios de ambiente laboral</li>
+            <li>Mediciones de efluentes gaseosos y líquidos</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Medio Ambiente 🌿</summary>
+        <ul>
+            <li>Plan de contingencia</li>
+            <li>Mediciones de freatrimetros</li>
+            <li>Elaboración de matriz legal</li>
+            <li>Gestión para la obtención de categorización y CAA</li>
+            <li>Estudio de impacto ambiental</li>
+        </ul>
+    </details>
+
+    <a href="https://wa.me/+0541157730424?text=Hola%20SMA%20Consultora,%20solicito%20asesoría%20sobre..." class="boton-whatsapp">
+    WhatsApp 💬
+</a>
+
+</body>
+</html>
